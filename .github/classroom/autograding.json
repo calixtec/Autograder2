@@ -1,0 +1,51 @@
+{
+  "tests": [
+    {
+      "name": "time_conversion.c compilation test",
+      "setup": "",
+      "run": "gcc -o time_conversion time_conversion.c",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 2
+    },
+    {
+      "name": "time_conversion.c correction test",
+      "setup": "",
+      "run": "bash ./test/test_framework_time.sh time_conversion; echo $?",
+      "output": "Test passes\n0",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 3
+    },
+    {
+      "name": "product.c compilation test",
+      "setup": "",
+      "run": "gcc -o product product.c",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 4
+    },
+    {
+      "name": "product.c correction test 1",
+      "setup": "",
+      "run": "bash ./test/test_framework_product.sh product; echo $?",
+      "output": "Test passes\n0",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 3
+    },
+    {
+      "name": "product.c correction test 2",
+      "setup": "",
+      "run": "bash ./test/test_framework_product.sh product; echo $?",
+      "output": "Test passes\n0",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 3
+    }
+  ]
+}
